@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-@interface AudioTools : NSObject
+
+#define kOutputBus 0
+#define kInputBus 1
+
+@interface AudioTools : NSObject {
+    AudioComponentInstance audioUnit;
+    float64 HWSampleRate;
+}
 
 @end
