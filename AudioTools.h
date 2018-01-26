@@ -13,8 +13,15 @@
 #define kInputBus 1
 
 @interface AudioTools : NSObject {
-    AudioComponentInstance audioUnit;
-    float64 HWSampleRate;
+//    AudioComponentInstance audioUnit;
+    Float64 HWSampleRate;
 }
+@property( readonly)AudioBuffer audioBuffer;
+@property( readonly)AudioComponentInstance audioUnit;
+
+static inline BOOL CheckError(OSStatus error, const char *operation, const char* file, int line);
+
+- (void)start;
+- (void)stop;
 
 @end

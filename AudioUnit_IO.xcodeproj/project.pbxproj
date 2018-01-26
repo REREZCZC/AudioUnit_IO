@@ -13,7 +13,7 @@
 		4C924D721FC6B7870000BEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C924D711FC6B7870000BEE4 /* Assets.xcassets */; };
 		4C924D751FC6B7870000BEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C924D731FC6B7870000BEE4 /* LaunchScreen.storyboard */; };
 		4C924D781FC6B7870000BEE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C924D771FC6B7870000BEE4 /* main.m */; };
-		4C924D831FC6BC630000BEE4 /* AudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C924D821FC6BC630000BEE4 /* AudioTools.m */; };
+		4C924D831FC6BC630000BEE4 /* AudioTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C924D821FC6BC630000BEE4 /* AudioTools.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		4C924D761FC6B7870000BEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C924D771FC6B7870000BEE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C924D811FC6BC630000BEE4 /* AudioTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioTools.h; sourceTree = "<group>"; };
-		4C924D821FC6BC630000BEE4 /* AudioTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioTools.m; sourceTree = "<group>"; };
+		4C924D821FC6BC630000BEE4 /* AudioTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioTools.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				4C924D811FC6BC630000BEE4 /* AudioTools.h */,
-				4C924D821FC6BC630000BEE4 /* AudioTools.m */,
+				4C924D821FC6BC630000BEE4 /* AudioTools.mm */,
 				4C924D671FC6B7870000BEE4 /* AudioUnit_IO */,
 				4C924D661FC6B7870000BEE4 /* Products */,
 			);
@@ -149,7 +149,7 @@
 			files = (
 				4C924D6D1FC6B7870000BEE4 /* ViewController.m in Sources */,
 				4C924D781FC6B7870000BEE4 /* main.m in Sources */,
-				4C924D831FC6BC630000BEE4 /* AudioTools.m in Sources */,
+				4C924D831FC6BC630000BEE4 /* AudioTools.mm in Sources */,
 				4C924D6A1FC6B7870000BEE4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JP3956KA38;
 				INFOPLIST_FILE = AudioUnit_IO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "renzhicheng.AudioUnit-IO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -301,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JP3956KA38;
 				INFOPLIST_FILE = AudioUnit_IO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "renzhicheng.AudioUnit-IO";
 				PRODUCT_NAME = "$(TARGET_NAME)";
